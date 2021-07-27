@@ -1,5 +1,5 @@
 'use strict';
-
+let counter =0
 let name = prompt ("What's your name dear ")
 alert("WELCOME WELCOME"  + name + " Im start testing your information of what you know about me")
 
@@ -33,8 +33,14 @@ switch(nationality.toLowerCase())
         alert("Sorry your answer is wrong , i`m Jordanian ");
         console.log(`no`) ;
         break;
+       
+    }
 
-}
+    if (nationality === `yes` || nationality === `y`){
+        counter++
+    }
+    console.log(counter)
+
 
 
 
@@ -68,6 +74,11 @@ case work = `n` :
 
 }
 
+if (work == `no` || work === `n`){
+    counter++
+}
+console.log(counter)
+
 
 let age = prompt("Am I a underage ?  هل انا قاصرة؟");
 
@@ -99,6 +110,12 @@ case age = `n` :
 
 }
 
+
+if (age == `no` || age === `n`){
+    counter++
+}
+console.log(counter)
+
 let uni = prompt("Did i graduate from the University of Jordan?");
 
 while ( uni !== "yes" && uni !== "no" && uni !== "y" && uni !== "n" )
@@ -129,6 +146,11 @@ case uni = `n` :
 
 }
 
+if (uni === `no` || uni === `n`){
+    counter++
+}
+console.log(counter)
+
 
 
 
@@ -158,7 +180,75 @@ switch(food.toLowerCase())
         console.log(`no`) ;
         break;
 }
+ 
+if (food =='yes' || food === 'y'){
+    counter++
+}
+console.log(counter)
 
 
 alert (" Thank you " + name + " i hope you will Wait for the next episode of know more about Sarah Darwish hahahaah")
+
+
+
+
+ console.log(typeof old)
+
+
+for (let i = 0 ; i < 4 ; i++ )
+{
+    let old = prompt("Guess how old i will be in ten years ?")
+    old = Number(old)
+        if(old > 33)
+        {
+            alert("NO, too high");
+        }
+        else if (old < 33){
+            alert("No , too low");
+        }
+        else{
+            counter++
+            console.log(counter)
+            alert("It`s correct answere , i will be 33 years old");
+             break;
+        }
+        
+}
+alert ("The correct answer is 33 ")
+
+
+
+let x = false ;
+let ie =["safety engineer","procurement engineer" ,"project engineer", "sales engineer","production engineer","planning engineer"];
+for (let s=0;s<6;s++){
+let seven = prompt("Guess one of the fields in which an industrial engineer can work it")
+
+for(let i=0;i<ie.length;i++){
+    console.log(seven +' ' +ie[i])
+   
+    if (seven === ie[i]){
+        alert ("Well done you guessed");
+        counter++;
+        x = true;
+        break;
+    }
+    }
+if(x) {
+    break;
+}
+}
+
+
+alert("the fields in which an industrial engineer can work it are " + ie );
+
+alert (`your scoore is ${counter} /7`)
+
+
+
+ 
+
+
+
+
+
     

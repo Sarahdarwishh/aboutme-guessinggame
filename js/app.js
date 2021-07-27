@@ -1,12 +1,22 @@
 'use strict';
+
 let name = prompt ("What's your name dear ")
-alert("WELCOME WELCOME " + name + " I `m start testing your information of what you know about me")
+alert("WELCOME WELCOME"  + name + " Im start testing your information of what you know about me")
 
 let nationality = prompt (" Is my nationality Jordanian? ").toLowerCase();
+console.log(nationality)
+
+while ( nationality !== "yes" && nationality !== "no" && nationality !== "y" && nationality !== "n" )
+{
+    nationality = prompt("Please enter yes or no , y or n just ") 
+
+}   
+
 switch(nationality.toLowerCase())
-{    case  nationality =`yes`:
+{   
+     case  nationality =`yes`:
         console.log(`yes`) ;
-        alert ("correct, my nationality is Jordanian ");
+        alert ("correct, my nationality is Jordanian");
         break ;
 
     case  nationality =`y`:
@@ -29,6 +39,11 @@ switch(nationality.toLowerCase())
 
 
 let work = prompt("Do i work as Dr");
+    while ( work !== "yes" && work !== "no" && work !== "y" && work !== "n" )
+    {
+        work = prompt("Please enter yes or no , y or n just ") 
+    }
+    
 switch(work.toLowerCase())
  {
  case  work =`yes`:
@@ -53,7 +68,13 @@ case work = `n` :
 
 }
 
+
 let age = prompt("Am I a underage ?  هل انا قاصرة؟");
+
+while ( age !== "yes" && age !== "no" && age !== "y" && age !== "n" )
+    {
+        age = prompt("Please enter yes or no , y or n just ")  
+    }
 switch(age.toLowerCase())
  {
  case  age =`yes`:
@@ -79,6 +100,11 @@ case age = `n` :
 }
 
 let uni = prompt("Did i graduate from the University of Jordan?");
+
+while ( uni !== "yes" && uni !== "no" && uni !== "y" && uni !== "n" )
+    {
+        uni = prompt("Please enter yes or no , y or n just ") 
+    }
 switch(uni.toLowerCase())
  {
  case  uni =`yes`:
@@ -107,7 +133,10 @@ case uni = `n` :
 
 
 let food = prompt (" Another thing to know about me hahahah ,Is pasta my favorite dish? ");
-
+while (  food !== "yes" && food !== "no" && food !== "y" && food !== "n" )
+    {
+        food = prompt("Please enter yes or no , y or n just ") 
+    }
 switch(food.toLowerCase())
 {    case  food =`yes`:
         console.log(`yes`) ;
@@ -128,8 +157,8 @@ switch(food.toLowerCase())
         alert("Sorry your answer is wrong , it`s my favorite ");
         console.log(`no`) ;
         break;
-
 }
 
 
 alert (" Thank you " + name + " i hope you will Wait for the next episode of know more about Sarah Darwish hahahaah")
+    

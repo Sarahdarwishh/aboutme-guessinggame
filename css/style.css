@@ -1,4 +1,3 @@
-
 h1 {
     text-align: center;
     color:brown;
@@ -6,6 +5,24 @@ h1 {
 }
 
 p{
-color:saddlebrown               ;
+color:saddlebrown;
     background-color: burlywood;
 }
+
+
+ol{
+    list-style-type: upper-roman;
+    background-color:yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-left: 2%;
+}
+   
+
+ul {
+    font-weight: 900;
+    list-style-type: square;
+    margin-left: 5%;
+   background-color: DarkGoldenRod;
+}
+ 

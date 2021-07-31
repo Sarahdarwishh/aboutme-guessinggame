@@ -46,9 +46,11 @@ function get_old (){
                 alert("No , too low");
             }
             else{
+                alert("It`s correct answere , i will be 33 years old");
+                console.log(scoore)
                return scoore++
                 console.log(scoore)
-                alert("It`s correct answere , i will be 33 years old");
+               
                  break;
             }
     
@@ -88,6 +90,42 @@ function fields(){
 
 
 
+
+
+let nationality = prompt (" Is my nationality Jordanian? ").toLowerCase();
+y_or_n_question (nationality, "correct, my nationality is Jordanian","Sorry your answer is wrong, i`m Jordanian ", true)
+
+let work = prompt("Do i work as Dr");
+y_or_n_question(work, "Sorry your answer is wrong", "correct, i`m Industrial engineer ", false)
+
+
+let age = prompt("Am I a underage ?  هل انا قاصرة؟");
+y_or_n_question (age, "Sorry your answer is wrong , i`m 23 years " ,"correct,i`m 23 ", false)
+
+let uni = prompt("Did i graduate from the University of Jordan?");
+y_or_n_question (uni, "Sorry your answer is wrong , i`m graduted from Hasheimte University " ,"correct, i`m graduted from Hasheimte University ", false)
+
+
+let food = prompt (" Another thing to know about me hahahah ,Is pasta my favorite dish? ");
+y_or_n_question (food, "correct, it`s my favorite" ,"Sorry your answer is wrong , it`s my favorite ", true)
+
+
+
+get_old();
+
+fields();
+
+alert(`your scoore is ${scoore} `)
+
+
+
+
+
+
+// -------------------------------------------------------------------------------------------
+
+
+
 // console.log(`yes`) ;
 // alert (answer_yes);
 // break ;
@@ -120,30 +158,6 @@ function fields(){
 //             counter++
 //         }
 //         console.log(counter)
-
-
-
-let nationality = prompt (" Is my nationality Jordanian? ").toLowerCase();
-// console.log(nationality)
-y_or_n_question (nationality, "correct, my nationality is Jordanian","Sorry your answer is wrong, i`m Jordanian ", true)
-
-let work = prompt("Do i work as Dr");
-y_or_n_question(work, "Sorry your answer is wrong", "correct, i`m Industrial engineer ", false)
-
-
-let age = prompt("Am I a underage ?  هل انا قاصرة؟");
-y_or_n_question (age, "Sorry your answer is wrong , i`m 23 years " ,"correct,i`m 23 ", false)
-
-let uni = prompt("Did i graduate from the University of Jordan?");
-y_or_n_question (uni, "Sorry your answer is wrong , i`m graduted from Hasheimte University " ,"correct, i`m graduted from Hasheimte University ", false)
-
-
-let food = prompt (" Another thing to know about me hahahah ,Is pasta my favorite dish? ");
-y_or_n_question (food, "correct, it`s my favorite" ,"Sorry your answer is wrong , it`s my favorite ", true)
-
-
-
-
 
 
 
@@ -292,13 +306,6 @@ y_or_n_question (food, "correct, it`s my favorite" ,"Sorry your answer is wrong 
 
 
 // alert (" Thank you " + name + " i hope you will Wait for the next episode of know more about Sarah Darwish hahahaah")
-
-
-get_old();
-
-fields();
-
-alert(`your scoore is ${scoore} `)
 
 
 
